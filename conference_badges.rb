@@ -6,12 +6,10 @@ def batch_badge_creator(names)
   names.map{ |name| badge_maker(name) }
   end
 
-def assign_rooms
-room=0
-  attendees.collect do |name|
-      room+=1
-      "Hello, #{name}! You'll be assigned to room #{room}!"
+def assign_rooms(speakers)
+new_arr = []
+speakers.each_with_index do |name,i|
+new_arr << "Hello, #{name}! You'll be assigned to room #{i+1}!"
+  end
+  new_arr
 end
-end
-#def printer
-#end
