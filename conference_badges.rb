@@ -5,8 +5,6 @@ end
 def batch_bage_creator(names)
   names.map{|name|badge_maker(name)}
   end
-end
-
 
 def assign_rooms
 room=0
